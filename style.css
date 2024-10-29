@@ -17,9 +17,36 @@
 
 body {
   background-color: var(--primary-blue);
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
   margin-top: 5vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .head-left img {
+  max-width: 40px;
+  margin-right: 20px;
+}
+
+header .head-left {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: larger;
+  color: var(--white);
+}
+
+header .head-right a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 300;
+  font-size: larger;
+  margin-left: 40px;
 }
 
 section h2 {
@@ -29,5 +56,78 @@ section h2 {
   font-weight: bold;
   text-align: center;
   padding: 20px;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+section .first {
+  display: flex;
+  flex-direction: column;
+}
+
+section .about img {
+  max-width: 400px;
+  padding: 20px;
+  margin-right: 50px; /*Necessário Ajustar a centralização da divisão entre os elementos*/
+}
+
+section .about {
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: var(--dark-blue);
+  font-weight: 400;
+  font-size: xx-large;
+  border-radius: 40px;
+  height: 330px;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+section .chapter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  height: 330px;
+}
+
+section .aiche-ufes-logo img {
+  max-width: 400px;
+  padding-top: 20px; /*é necessário ajustar a centralização da imagem*/
+}
+
+section .aiche-ufes-logo {
+  border-radius: 40px;
+  background-color: var(--white);
+  justify-content: center;
+}
+
+section .about-chapter p {
+  font-size: x-large;
+  font-weight: 500;
+}
+
+section .about-chapter {
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--white);
+  border-radius: 40px;
+  margin-left: 20px;
+  padding: 20px 30px;
+  color: var(--dark-blue);
+}
+
+section .dir-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* section .half-rectangle {
+  background-color: var(--white);
+  border-radius: 50px 30px;
+  height: 215px;
 }
